@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+main .visual{ position: relative; width: 100%; overflow: hidden; min-height:100vh; }
+main .visual > div{ margin: 200px auto;}
+main .visual .item-box{ position: relative; display:flex; align-items:center; gap:100px; }
+main .visual .item-box h1.title{ color:#fff; font-weight: 800; font-family: var(--jal); flex-shrink: 0;}
+main .visual .item-box h1.title em{ display:inline-block; overflow: hidden;}
+main .visual .item-box h1.title em span{ display:inline-block; transition:all 0.7s; }
+main .visual .item-box .img-box{ position: relative; display:flex; justify-content: center; flex-wrap:wrap; gap:40px; }
+main .visual .item-box .img-box figure{ position: relative; padding: 20px; border-radius:20px; background: linear-gradient(-50deg, #000 0%, #222 100%);
+display:inline-block; }
+main .visual .item-box.aos-animate h1.title em span{ animation: fadeIn ease both}
+main .visual .item-box.item1{ margin-bottom: 50px;}
+main .visual .item-box.item1 h1.title{ color:var(--mainC); }
+main .visual .item-box.item1 h1.title{text-align: right; }
+main .visual .item-box.item1 .img-box .figure{ padding: 30px;}
+main .visual .item-box.item1 .img-box figure.img1{ left: -30px;}
+main .visual .item-box.item1 .img-box figure.img2{ top: -30px;}
+main .visual .item-box.item2 .img-box figure.img1{ top: -40px; left: -40px; }
+main .visual .item-box.item2 .img-box figure.img3{ top: -20px; left: -20px;}
+main .visual .item-box.item2 .img-box figure.img4{ bottom: -20px; left: 30px; }
+
+@keyframes fadeIn{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
